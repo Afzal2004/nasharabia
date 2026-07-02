@@ -29,7 +29,38 @@
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
+      <div class="nav-item has-dropdown">
+        <button class="nav-drop-toggle" type="button" aria-expanded="false">
+            <span> <a href="services.html">Services</span>
+          <svg class="chev" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" fill="none" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="manpower.html">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.2"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>
+            <span><b>Rental Manpower</b><em>Skilled &amp; semi-skilled labour</em></span>
+          </a>
+          <a href="overseas_recruitment.html">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><path d="M17 4l2 2 4-4"/></svg>
+            <span><b>Overseas Recruitment</b><em>Sourcing &amp; mobilization</em></span>
+          </a>
+          <a href="rental_equipment.html">
+            <svg viewBox="0 0 24 24"><path d="M3 16l2-7h6l2 7"/><circle cx="7" cy="18" r="1.8"/><circle cx="16" cy="18" r="1.8"/><path d="M13 16h6l2-4h-4"/></svg>
+            <span><b>Rental Equipment</b><em>Cranes, generators &amp; more</em></span>
+          </a>
+          <a href="trading.html">
+            <svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg>
+            <span><b>Trading</b><em>Materials &amp; supplies</em></span>
+          </a>
+          <a href="facility_management.html">
+            <svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/></svg>
+            <span><b>Facility Management</b><em>End-to-end site support</em></span>
+          </a>
+          <a href="porta_cabin_rental.html">
+            <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="10" rx="1"/><path d="M3 8l3-4h12l3 4"/><path d="M9 18v-5h6v5"/></svg>
+            <span><b>Porta Cabin Rental</b><em>Site offices &amp; accommodation</em></span>
+          </a>
+        </div>
+      </div>
       <a href="projects.html" class="active">Projects</a>
       <a href="contact.html">Contact Us</a>
       <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
@@ -38,13 +69,26 @@
   </div>
 </header>
 
-<section class="page-banner dark-blueprint">
-  <div class="container">
-    <div class="crumb"><a href="index.html">Home</a> / Projects</div>
-    <h1>Our Ongoing Projects</h1>
-  </div>
-</section>
+<section class="page-banner"
+    style="
+        background:
+        /* linear-gradient(rgba(8,22,35,0.75), rgba(8,22,35,0.75)), */
+        url('images/ongoingbg.png');
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        padding: 130px 0;
+        color: #fff;
+    ">
+    
+    <div class="container">
+        <div class="crumb">
+            <a href="index.html" style="color:#f47c20;">Home</a> / Projects
+        </div>
 
+        <h1>Our Ongoing Projects</h1>
+    </div>
+</section>
 <section>
   <div class="container">
     <div class="split-head reveal" style="margin-bottom:34px;">
@@ -89,6 +133,101 @@
   </div>
 </section>
 
+
+<!-- ================= CLIENTS ================= -->
+<section class="clients-section">
+
+    <div class="container">
+
+        <div class="section-head center reveal">
+            <div class="tag">Trusted By</div>
+            <h2>Companies We've Worked With</h2>
+            <p>
+                Proudly supporting leading organizations across construction,
+                oil & gas, industrial and infrastructure sectors.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="logo-slider">
+
+        <div class="logo-track">
+
+            <!-- First Set -->
+
+            <div class="logo-item">
+                <img src="images/clients/aramco.png" alt="Saudi Aramco">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/sabic.png" alt="SABIC">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/maaden.png" alt="Ma'aden">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/sec.png" alt="Saudi Electricity Company">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/neom.png" alt="NEOM">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/acwa.png" alt="ACWA Power">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/bechtel.png" alt="Bechtel">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/saipem.png" alt="Saipem">
+            </div>
+
+            <!-- Duplicate (Required for Infinite Scroll) -->
+
+            <div class="logo-item">
+                <img src="images/clients/aramco.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/sabic.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/maaden.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/sec.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/neom.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/acwa.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/bechtel.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/saipem.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 <section class="stat-strip">
   <div class="container">
     <div><b>120+</b><span>Projects Delivered</span></div>
@@ -131,14 +270,14 @@
         </ul>
       </div>
       <div>
-        <h5>Our Services</h5>
+         <h5>Our Services</h5>
         <ul>
-          <li><a href="services.html#manpower">Rental Manpower</a></li>
-          <li><a href="services.html#recruitment">Overseas Recruitment</a></li>
-          <li><a href="services.html#equipment">Rental Equipment</a></li>
-          <li><a href="services.html#trading">Trading</a></li>
-          <li><a href="services.html#facility">Facility Management</a></li>
-          <li><a href="services.html#cabins">Porta Cabin Rental</a></li>
+          <li><a href="manpower.html">Rental Manpower</a></li>
+          <li><a href="overseas_recruitment.html">Overseas Recruitment</a></li>
+          <li><a href="rental_equipment.html">Rental Equipment</a></li>
+          <li><a href="trading.html">Trading</a></li>
+          <li><a href="facility_management.html">Facility Management</a></li>
+          <li><a href="porta_cabin_rental.html">Porta Cabin Rental</a></li>
         </ul>
       </div>
       <div>
