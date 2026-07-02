@@ -143,3 +143,61 @@ document.addEventListener('DOMContentLoaded', function () {
     revealEls.forEach(function (el) { io.observe(el); });
   }
 });
+
+/* ==========================
+   HERO BACKGROUND SLIDER
+========================== */
+
+const heroSlides = document.querySelectorAll(".hero-slide");
+
+if(heroSlides.length){
+
+    let heroIndex = 0;
+
+    function showHero(index){
+
+        heroSlides.forEach(slide =>
+            slide.classList.remove("active")
+        );
+
+        heroSlides[index].classList.add("active");
+
+    }
+
+    function nextHero(){
+
+        heroIndex++;
+
+        if(heroIndex >= heroSlides.length){
+
+            heroIndex = 0;
+
+        }
+
+        showHero(heroIndex);
+
+    }
+
+    function prevHero(){
+
+        heroIndex--;
+
+        if(heroIndex < 0){
+
+            heroIndex = heroSlides.length - 1;
+
+        }
+
+        showHero(heroIndex);
+
+    }
+
+    document.querySelector(".hero-next")
+        ?.addEventListener("click", nextHero);
+
+    document.querySelector(".hero-prev")
+        ?.addEventListener("click", prevHero);
+
+    setInterval(nextHero,5000);
+
+}
