@@ -31,7 +31,38 @@
     <nav class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
+      <div class="nav-item has-dropdown">
+        <button class="nav-drop-toggle" type="button" aria-expanded="false">
+          <span> <a href="services.html">Services</span>
+          <svg class="chev" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" fill="none" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown">
+          <a href="manpower.html">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.2"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>
+            <span><b>Rental Manpower</b><em>Skilled &amp; semi-skilled labour</em></span>
+          </a>
+          <a href="overseas_recruitment.html">
+            <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><path d="M17 4l2 2 4-4"/></svg>
+            <span><b>Overseas Recruitment</b><em>Sourcing &amp; mobilization</em></span>
+          </a>
+          <a href="rental_equipment.html">
+            <svg viewBox="0 0 24 24"><path d="M3 16l2-7h6l2 7"/><circle cx="7" cy="18" r="1.8"/><circle cx="16" cy="18" r="1.8"/><path d="M13 16h6l2-4h-4"/></svg>
+            <span><b>Rental Equipment</b><em>Cranes, generators &amp; more</em></span>
+          </a>
+          <a href="trading.html">
+            <svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg>
+            <span><b>Trading</b><em>Materials &amp; supplies</em></span>
+          </a>
+          <a href="facility_management.html">
+            <svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/></svg>
+            <span><b>Facility Management</b><em>End-to-end site support</em></span>
+          </a>
+          <a href="porta_cabin_rental.html">
+            <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="10" rx="1"/><path d="M3 8l3-4h12l3 4"/><path d="M9 18v-5h6v5"/></svg>
+            <span><b>Porta Cabin Rental</b><em>Site offices &amp; accommodation</em></span>
+          </a>
+        </div>
+      </div>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact Us</a>
       <a href="contact.html" class="btn btn-primary nav-cta">Get a Quote</a>
@@ -42,6 +73,29 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero dark-blueprint">
+  <!-- Hero Background Slider -->
+<div class="hero-slider">
+
+    <div class="hero-slide active"
+        style="background-image:url('images/hero6.jpg');"></div>
+
+    <div class="hero-slide"
+        style="background-image:url('images/hero2.jpg');"></div>
+
+    <div class="hero-slide"
+        style="background-image:url('images/hero3.jpg');"></div>
+
+    <div class="hero-slide"
+        style="background-image:url('images/hero4.jpg');"></div>
+
+    <div class="hero-slide"
+        style="background-image:url('images/hero5.jpg');"></div>
+
+</div>
+
+<!-- Navigation Buttons -->
+<button class="hero-prev">&#10094;</button>
+<button class="hero-next">&#10095;</button>
   <div class="container">
     <div>
       <div class="tag">General Contracting · Al‑Jubail, KSA</div>
@@ -61,36 +115,237 @@
     <div>
       <div class="cube-stage">
         <div class="cube">
-          <a href="services.html#manpower" class="cube__face cube__face--front">
+          <a href="manpower.html" class="cube__face cube__face--front">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.2"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>
             <span class="fn">Service 01</span><span class="ft">Rental Manpower</span>
           </a>
-          <a href="services.html#recruitment" class="cube__face cube__face--back">
+          <a href="overseas_recruitment.html" class="cube__face cube__face--back">
             <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><path d="M17 4l2 2 4-4"/></svg>
             <span class="fn">Service 02</span><span class="ft">Overseas Recruitment</span>
           </a>
-          <a href="services.html#equipment" class="cube__face cube__face--right">
+          <a href="rental_equipment.html" class="cube__face cube__face--right">
             <svg viewBox="0 0 24 24"><path d="M3 16l2-7h6l2 7"/><circle cx="7" cy="18" r="1.8"/><circle cx="16" cy="18" r="1.8"/><path d="M13 16h6l2-4h-4"/></svg>
             <span class="fn">Service 03</span><span class="ft">Rental Equipment</span>
           </a>
-          <a href="services.html#trading" class="cube__face cube__face--left">
+          <a href="trading.html" class="cube__face cube__face--left">
             <svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg>
             <span class="fn">Service 04</span><span class="ft">Trading</span>
           </a>
-          <a href="services.html#facility" class="cube__face cube__face--top">
+          <a href="facility_management.html" class="cube__face cube__face--top">
             <svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/></svg>
             <span class="fn">Service 05</span><span class="ft">Facility Management</span>
           </a>
-          <a href="services.html#cabins" class="cube__face cube__face--bottom">
+          <a href="porta_cabin_rental.html" class="cube__face cube__face--bottom">
             <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="10" rx="1"/><path d="M3 8l3-4h12l3 4"/><path d="M9 18v-5h6v5"/></svg>
             <span class="fn">Service 06</span><span class="ft">Porta Cabin Rental</span>
           </a>
         </div>
       </div>
-      <div class="cube-hint">Move your cursor over the box — click a face to view the service</div>
+      <div class="cube-hint">Drag or swipe the box — tap a face to view the service</div>
     </div>
   </div>
 </section>
+
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="container">
+
+    <div class="section-head reveal center">
+      <div class="tag">What We Offer</div>
+      <h2>Six Ways We Support Your Site</h2>
+      <p>
+        From skilled workforce to structural materials, every service is built
+        to keep your project moving efficiently and safely.
+      </p>
+    </div>
+
+    <div class="services-grid reveal">
+
+      <!-- Rental Manpower -->
+      <a href="manpower.html" class="service-card">
+
+        <div class="service-image">
+          <img src="images/rentalmanpower.png" alt="Rental Manpower">
+        </div>
+
+        <div class="service-content">
+
+          <div class="ic">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="7.5" r="3.2"/>
+              <path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/>
+            </svg>
+          </div>
+
+          <h3>Rental Manpower</h3>
+
+          <p>
+            Skilled, semi-skilled and general labour supplied for construction,
+            industrial and infrastructure projects.
+          </p>
+
+          <span class="more">Learn More →</span>
+
+        </div>
+
+      </a>
+
+      <!-- Overseas Recruitment -->
+      <a href="overseas_recruitment.html" class="service-card">
+
+        <div class="service-image">
+          <img src="images/overseas-recruitment.png" alt="Overseas Recruitment">
+        </div>
+
+        <div class="service-content">
+
+          <div class="ic">
+            <svg viewBox="0 0 24 24">
+              <circle cx="9" cy="8" r="3"/>
+              <path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/>
+              <path d="M17 4l2 2 4-4"/>
+            </svg>
+          </div>
+
+          <h3>Overseas Recruitment</h3>
+
+          <p>
+            Complete recruitment including sourcing, screening, visa processing
+            and workforce mobilization.
+          </p>
+
+          <span class="more">Learn More →</span>
+
+        </div>
+
+      </a>
+
+      <!-- Rental Equipment -->
+      <a href="rental_equipment.html" class="service-card">
+
+        <div class="service-image">
+          <img src="images/rentalequipment.png" alt="Rental Equipment">
+        </div>
+
+        <div class="service-content">
+
+          <div class="ic">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 16l2-7h6l2 7"/>
+              <circle cx="7" cy="18" r="1.8"/>
+              <circle cx="16" cy="18" r="1.8"/>
+              <path d="M13 16h6l2-4h-4"/>
+            </svg>
+          </div>
+
+          <h3>Rental Equipment</h3>
+
+          <p>
+            Cranes, generators, forklifts, scaffolding and heavy construction
+            equipment.
+          </p>
+
+          <span class="more">Learn More →</span>
+
+        </div>
+
+      </a>
+
+      <!-- Trading -->
+      <a href="trading.html" class="service-card">
+
+        <div class="service-image">
+          <img src="images/trading.png" alt="Trading">
+        </div>
+
+        <div class="service-content">
+
+          <div class="ic">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 7l9-4 9 4-9 4-9-4z"/>
+              <path d="M3 7v10l9 4 9-4V7"/>
+              <path d="M12 11v10"/>
+            </svg>
+          </div>
+
+          <h3>Trading</h3>
+
+          <p>
+            Industrial materials, electrical products, valves, fittings and
+            safety equipment.
+          </p>
+
+          <span class="more">Learn More →</span>
+
+        </div>
+
+      </a>
+
+      <!-- Facility Management -->
+      <a href="facility_management.html" class="service-card">
+
+        <div class="service-image">
+          <img src="images/facilitymanagement.png" alt="Facility Management">
+        </div>
+
+        <div class="service-content">
+
+          <div class="ic">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 21V9l8-5 8 5v12"/>
+              <path d="M9 21v-6h6v6"/>
+            </svg>
+          </div>
+
+          <h3>Facility Management</h3>
+
+          <p>
+            Building maintenance, MEP services, housekeeping and complete
+            facility support.
+          </p>
+
+          <span class="more">Learn More →</span>
+
+        </div>
+
+      </a>
+
+      <!-- Porta Cabin Rental -->
+      <a href="porta_cabin_rental.html" class="service-card">
+
+        <div class="service-image">
+          <img src="images/portacabin.png" alt="Porta Cabin Rental">
+        </div>
+
+        <div class="service-content">
+
+          <div class="ic">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="8" width="18" height="10" rx="1"/>
+              <path d="M3 8l3-4h12l3 4"/>
+              <path d="M9 18v-5h6v5"/>
+            </svg>
+          </div>
+
+          <h3>Porta Cabin Rental</h3>
+
+          <p>
+            Portable offices, accommodation, security cabins and storage
+            solutions for project sites.
+          </p>
+
+          <span class="more">Learn More →</span>
+
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
 
 <!-- ============ BEST PRACTICES ============ -->
 <section class="blueprint-bg">
@@ -151,9 +406,7 @@
   <div class="container split">
     <div class="reveal">
       <div class="about-visual">
-        <div class="about-icon">
-          <svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="10" rx="1"/><path d="M3 8l3-4h12l3 4"/><path d="M8 18v-5h8v5"/></svg>
-        </div>
+        <img src="images/about.png" alt="About Nash Arabia">
         <div class="about-badge"><b>10+</b><span>Years in KSA</span></div>
       </div>
     </div>
@@ -230,6 +483,101 @@
   </div>
 </section>
 
+
+<section class="clients-section">
+
+    <div class="container">
+
+        <div class="section-head center reveal">
+            <div class="tag">Trusted By</div>
+            <h2>Companies We've Worked With</h2>
+            <p>
+                Proudly supporting leading organizations across construction,
+                oil & gas, industrial and infrastructure sectors.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="logo-slider">
+
+        <div class="logo-track">
+
+            <!-- First Set -->
+
+            <div class="logo-item">
+                <img src="images/clients/aramco.png" alt="Saudi Aramco">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/sabic.png" alt="SABIC">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/maaden.png" alt="Ma'aden">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/sec.png" alt="Saudi Electricity Company">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/neom.png" alt="NEOM">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/acwa.png" alt="ACWA Power">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/bechtel.png" alt="Bechtel">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/saipem.png" alt="Saipem">
+            </div>
+
+            <!-- Duplicate (Required for Infinite Scroll) -->
+
+            <div class="logo-item">
+                <img src="images/clients/aramco.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/sabic.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/maaden.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/sec.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/neom.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/acwa.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/bechtel.png" alt="">
+            </div>
+
+            <div class="logo-item">
+                <img src="images/clients/saipem.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <!-- ============ CTA BANNER ============ -->
 <section class="cta-banner">
   <div class="container">
@@ -299,12 +647,12 @@
       <div>
         <h5>Our Services</h5>
         <ul>
-          <li><a href="services.html#manpower">Rental Manpower</a></li>
-          <li><a href="services.html#recruitment">Overseas Recruitment</a></li>
-          <li><a href="services.html#equipment">Rental Equipment</a></li>
-          <li><a href="services.html#trading">Trading</a></li>
-          <li><a href="services.html#facility">Facility Management</a></li>
-          <li><a href="services.html#cabins">Porta Cabin Rental</a></li>
+          <li><a href="manpower.html">Rental Manpower</a></li>
+          <li><a href="overseas_recruitment.html">Overseas Recruitment</a></li>
+          <li><a href="rental_equipment.html">Rental Equipment</a></li>
+          <li><a href="trading.html">Trading</a></li>
+          <li><a href="facility_management.html">Facility Management</a></li>
+          <li><a href="porta_cabin_rental.html">Porta Cabin Rental</a></li>
         </ul>
       </div>
       <div>
