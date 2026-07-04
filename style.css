@@ -399,58 +399,78 @@
 
 
   .stats-section{
-    background:#ffffff;
-    padding:100px 20px 80px;
+  background:linear-gradient(150deg,#191714,#2b241c 60%,#B94E17);
+  padding:80px 0;
 }
 
 .stats-container{
-    max-width:1200px;
-    margin:auto;
-
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 24px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+  text-align:center;
 }
 
 .stat-box{
-    text-align:center;
-    padding:40px 20px;
+  padding:20px 10px;
+  border-right:1px solid rgba(255,255,255,.15);
+  transition:transform .3s ease;
+}
 
-    background:#fff;
-    border-radius:10px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
+.stat-box:last-child{
+  border-right:none;
 }
 
 .stat-box:hover{
-    transform:translateY(-10px);
+  transform:translateY(-6px);
 }
 
 .stat-box h2{
-    font-size:48px;
-    color:#005a9c;
-    margin-bottom:10px;
+  font-family:'Oswald', sans-serif;
+  font-size:44px;
+  font-weight:700;
+  color:#F59E0B;
+  margin-bottom:8px;
 }
 
 .stat-box p{
-    font-size:18px;
-    color:#666;
+  font-family:'Inter', sans-serif;
+  font-size:12.5px;
+  letter-spacing:1.3px;
+  text-transform:uppercase;
+  color:#e3ddd2;
 }
-@media(max-width:768px){
 
-    .stats-container{
-        grid-template-columns:repeat(2,1fr);
-        gap:15px;
-    }
+/* Tablet */
+@media (max-width:900px){
+  .stats-container{
+    grid-template-columns:repeat(2,1fr);
+    gap:36px 20px;
+  }
+  .stat-box:nth-child(2){ border-right:none; }
+  .stat-box:nth-child(1),
+  .stat-box:nth-child(2){
+    border-bottom:1px solid rgba(255,255,255,.15);
+    padding-bottom:24px;
+  }
+}
 
-    .stat-box h2{
-        font-size:32px;
-    }
-
-    .stat-box p{
-        font-size:14px;
-    }
+/* Mobile */
+@media (max-width:520px){
+  .stats-container{
+    grid-template-columns:1fr;
+  }
+  .stat-box{
+    border-right:none !important;
+    border-bottom:1px solid rgba(255,255,255,.15);
+    padding-bottom:24px;
+  }
+  .stat-box:last-child{
+    border-bottom:none;
+  }
+  .stat-box h2{ font-size:36px; }
 }
 
 .hs-1{
