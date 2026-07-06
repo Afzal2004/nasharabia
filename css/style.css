@@ -1079,7 +1079,7 @@ h2 {
 }
 
 /* Responsive Service Cards */
-@media (max-width: 980px) {
+/* @media (max-width: 980px) {
   .service-float {
     margin-top: -80px;
   }
@@ -1100,7 +1100,7 @@ h2 {
   }
 }
 
-/* @media (max-width: 640px) {
+ @media (max-width: 640px) {
   .service-float {
     margin-top: -40px;
     padding: 0 16px;
@@ -1134,7 +1134,7 @@ h2 {
     border-top: none;
     border-radius: 0 0 var(--radius) var(--radius);
   }
-} */
+}  */
 @media (max-width:640px){
 
 .service-float-grid{
