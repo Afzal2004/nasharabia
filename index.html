@@ -1,600 +1,583 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nash Arabia General Contracting Co. — Manpower, Equipment &amp; Industrial Trading</title>
-<meta name="description" content="Nash Arabia General Contracting Co. supplies skilled manpower, rental equipment, industrial trading and facility management to construction, industrial and oil & gas projects across Saudi Arabia.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-  
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nash Arabia General Contracting Company | Manpower, Equipment & Facility Management</title>
+<meta name="description" content="Nash Arabia delivers rental manpower, overseas recruitment, rental equipment, trading, facility management and porta cabin services across Saudi Arabia." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 74'%3E%3Cpath d='M6 74V30C6 14.5 16.5 4 30 4S54 14.5 54 30V74H41V32c0-6-4.5-11-11-11s-11 5-11 11v42H6z' fill='%23E8792D'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" />
+<link rel="stylesheet" href="css/style.css" />
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
-<body>
+<body data-page="home">
 
-<!-- ============ TOP BAR ============ -->
-<div class="topbar">
-  <div class="container">
-    <div class="topbar-left">Welcome to Nash Arabia General Contracting Co.</div>
-    <div class="topbar-right">
-      <span><svg width="13" height="13" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg> info@nasharabia.com</span>
-      <span><svg width="13" height="13" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.8"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.3 21 3 14.7 3 6a2 2 0 0 1 1-2z"/></svg> +966 13 361 1560</span>
-      <div class="social">
-        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 0 1 4 0V17M12 17v-7"/></svg></a>
-        <a href="#" aria-label="Twitter/X"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/></svg></a>
+<!-- ============ HEADER Component ============ -->
+<div id="site-header"></div>
+
+<!-- ============ HERO SLIDER (Matching Scaffolding Theme) ============ -->
+<section class="hero" id="home">
+  <div class="hero-slider">
+    <!-- Slide 1: Contracting -->
+    <div class="hero-slide is-active">
+      <div class="hero-bg" style="background-image:url('images/hero1.jpg')"></div>
+      <div class="container hero-content">
+        <div class="hero-title-box">
+          <h1>General Contracting &amp; Engineering</h1>
+        </div>
+        <div class="hero-desc-box">
+          <p>Nash Arabia delivers top-tier civil, mechanical, structural, and piping contracting services for heavy industrial projects across Saudi Arabia.</p>
+        </div>
+        <div class="hero-ctas">
+          <a href="contact.html" class="btn btn-primary">Request a Quote</a>
+          <a href="about.html" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slide 2: Manpower -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('images/hero2.jpg')"></div>
+      <div class="container hero-content">
+        <div class="hero-title-box">
+          <h1>Rental Manpower Solutions</h1>
+        </div>
+        <div class="hero-desc-box">
+          <p>Highly trained, certified, and fully compliant skilled manpower ready for rapid mobilization in construction and industrial sectors.</p>
+        </div>
+        <div class="hero-ctas">
+          <a href="manpower.html" class="btn btn-primary">View Trades</a>
+          <a href="contact.html" class="btn btn-outline">Hire Talent</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Equipment -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('images/hero3.jpg')"></div>
+      <div class="container hero-content">
+        <div class="hero-title-box">
+          <h1>Heavy Equipment Rental</h1>
+        </div>
+        <div class="hero-desc-box">
+          <p>Modern and well-maintained fleet of heavy cranes, loaders, excavators, and generators supporting large-scale projects.</p>
+        </div>
+        <div class="hero-ctas">
+          <a href="rental_equipment.html" class="btn btn-primary">Explore Fleet</a>
+          <a href="contact.html" class="btn btn-outline">Get Rates</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4: Trading -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('images/hero4.jpg')"></div>
+      <div class="container hero-content">
+        <div class="hero-title-box">
+          <h1>Industrial Materials Trading</h1>
+        </div>
+        <div class="hero-desc-box">
+          <p>Trusted supplier of construction materials, electrical supplies, mechanical products, and engineering consumables.</p>
+        </div>
+        <div class="hero-ctas">
+          <a href="trading.html" class="btn btn-primary">View Products</a>
+          <a href="contact.html" class="btn btn-outline">Request Catalog</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5: Facility Management -->
+    <div class="hero-slide">
+      <div class="hero-bg" style="background-image:url('images/hero5.jpg')"></div>
+      <div class="container hero-content">
+        <div class="hero-title-box">
+          <h1>Turnkey Facility Management</h1>
+        </div>
+        <div class="hero-desc-box">
+          <p>Integrated camp operations, laundry services, planned maintenance, and support solutions for industrial projects.</p>
+        </div>
+        <div class="hero-ctas">
+          <a href="facility_management.html" class="btn btn-primary">Our Facility Services</a>
+          <a href="contact.html" class="btn btn-outline">Consult Expert</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<!-- ============ HEADER ============ -->
-<header class="site" id="siteHeader">
-  <div class="container nav-row">
-    <a href="#" class="brand">
-      <img src="logo.png" alt="Nash Arabia General Contracting Co. logo">
-      <span class="brand-word"><span class="l1">NASH ARABIA</span><span class="l2">General Contracting Co.</span></span>
-    </a>
-    <nav class="links">
-      <a href="#" class="active">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="#clients">Clients</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Careers</a>
-      <a href="contact.html" class="nav-cta">Contact Us</a>
-    </nav>
-    <button class="burger" id="burgerBtn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <!-- Navigation Dots & Arrows -->
+  <div class="hero-dots"></div>
+  <div class="hero-arrows">
+    <button class="hero-arrow prev" aria-label="Previous slide">
+      <svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="hero-arrow next" aria-label="Next slide">
+      <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
   </div>
-</header>
+</section>
 
-<!-- ============ HERO ============ -->
-  <section class="hero" id="home">
-    <div class="hero-slide hs-1 active"></div>
-    <div class="hero-slide hs-2"></div>
-    <div class="hero-slide hs-3"></div>
-    <div class="hero-slide hs-4"></div>
-    <div class="hero-slide hs-5"></div>
-
-    <div class="hero-content">
-      <div class="container">
-        <div class="inner">
-          <div class="eyebrow">General Contracting · Al‑Jubail, KSA</div>
-          <h1>Manpower, Equipment &amp; Materials — <em>Delivered to Site.</em></h1>
-          <p>Nash Arabia General Contracting Co. supplies skilled manpower, rental equipment, industrial trading and facility support to construction, industrial and oil &amp; gas projects across Saudi Arabia.</p>
-          <div class="hero-ctas">
-            <a href="#contact" class="btn btn-primary">Request Quote</a>
-            <a href="#services" class="btn btn-outline">Explore Services</a>
+<!-- ============ FLOATING 3D SERVICE BOXES (Matching Photo 3) ============ -->
+<section class="service-float">
+  <div class="container">
+    <div class="service-float-grid" data-stagger>
+      
+      <!-- Box 1: TRADING -->
+      <div class="cube-container reveal">
+        <div class="cube">
+          <div class="cube-face front">
+            <span class="cube-icon">📦</span>
+            <h3>Trading</h3>
+          </div>
+          <div class="cube-face top">
+            <h4>Industrial Trading</h4>
+            <ul class="cube-links">
+              <li><a href="trading.html#materials">Construction Materials</a></li>
+              <li><a href="trading.html#electrical">Electrical Supplies</a></li>
+              <li><a href="trading.html#mechanical">Mechanical Products</a></li>
+              <li><a href="trading.html#safety">Safety Equipment</a></li>
+            </ul>
+            <a href="trading.html" class="cube-more">View Page <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="hero-arrows">
-      <button id="heroPrev" aria-label="Previous slide">&#10094;</button>
-      <button id="heroNext" aria-label="Next slide">&#10095;</button>
-    </div>
-    <div class="hero-dots" id="heroDots"></div>
-
-    <!-- <div class="hero-stats">
-      <div class="container">
-        <div class="stat"><b data-count="500">0</b><span>Manpower Supplied</span></div>
-        <div class="stat"><b data-count="120">0</b><span>Projects Completed</span></div>
-        <div class="stat"><b data-count="15">0</b><span>Years Experience</span></div>
-        <div class="stat"><b>24/7</b><span>Site Support</span></div>
-      </div>
-    </div> -->
-  </section>
-
-<!-- ============ FLOATING SERVICE CUBES ============ -->
-<div class="cubes-wrap">
-  <div class="cubes-strip">
-
-    <div class="cube-slot">
-      <div class="cube">
-        <div class="cf front">
-          <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.2"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg></div>
-          <h3>Rental<br>Manpower</h3>
-        </div>
-        <div class="cf left"></div>
-        <div class="cf right"></div>
-        <div class="cf top">
-          <div class="top-title"></div>
-          <a href="#">Skilled Workers</a>
-          <a href="#">Engineers</a>
-          <a href="#">Technicians</a>
-          <a href="#">Supervisors</a>
+      <!-- Box 2: RENTAL -->
+      <div class="cube-container reveal">
+        <div class="cube">
+          <div class="cube-face front">
+            <span class="cube-icon">🚚</span>
+            <h3>Rental</h3>
+          </div>
+          <div class="cube-face top">
+            <h4>Equipment &amp; Cabin Rental</h4>
+            <ul class="cube-links">
+              <li><a href="rental_equipment.html#heavy">Heavy Machinery</a></li>
+              <li><a href="rental_equipment.html#generators">Power Generators</a></li>
+              <li><a href="porta_cabin_rental.html">Modular Porta Cabins</a></li>
+              <li><a href="rental_equipment.html#compressors">Air Compressors</a></li>
+            </ul>
+            <a href="rental_equipment.html" class="cube-more">View Page <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="cube-slot">
-      <div class="cube">
-        <div class="cf front">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 16l2-7h6l2 7"/><circle cx="7" cy="18" r="1.8"/><circle cx="16" cy="18" r="1.8"/><path d="M13 16h6l2-4h-4"/></svg></div>
-          <h3>Equipment<br>Rental</h3>
-        </div>
-        <div class="cf left"></div>
-        <div class="cf right"></div>
-        <div class="cf top">
-          <div class="top-title"></div>
-          <a href="#">Excavators</a>
-          <a href="#">Forklifts</a>
-          <a href="#">Generators</a>
-          <a href="#">Cranes</a>
+      <!-- Box 3: CONTRACTING -->
+      <div class="cube-container reveal">
+        <div class="cube">
+          <div class="cube-face front">
+            <span class="cube-icon">🏗️</span>
+            <h3>Contracting</h3>
+          </div>
+          <div class="cube-face top">
+            <h4>General Contracting</h4>
+            <ul class="cube-links">
+              <li><a href="manpower.html">Manpower Supply</a></li>
+              <li><a href="overseas_recruitment.html">Overseas Recruitment</a></li>
+              <li><a href="facility_management.html">Facility Management</a></li>
+              <li><a href="about.html#works">Civil &amp; Mechanical Works</a></li>
+            </ul>
+            <a href="services.html" class="cube-more">View Page <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="cube-slot">
-      <div class="cube">
-        <div class="cf front">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/></svg></div>
-          <h3>Facility<br>Management</h3>
-        </div>
-        <div class="cf left"></div>
-        <div class="cf right"></div>
-        <div class="cf top">
-          <div class="top-title"></div>
-          <a href="#">Cleaning</a>
-          <a href="#">Maintenance</a>
-          <a href="#">Security</a>
-          <a href="#">Housekeeping</a>
+      <!-- Box 4: FABRICATION -->
+      <div class="cube-container reveal">
+        <div class="cube">
+          <div class="cube-face front">
+            <span class="cube-icon">⚙️</span>
+            <h3>Fabrication</h3>
+          </div>
+          <div class="cube-face top">
+            <h4>Industrial Fabrication</h4>
+            <ul class="cube-links">
+              <li><a href="services.html#fabrication">Structural Steel</a></li>
+              <li><a href="services.html#piping">Piping Spools</a></li>
+              <li><a href="services.html#tanks">Tank &amp; Vessel Fabrication</a></li>
+              <li><a href="services.html#custom">Custom Metal Works</a></li>
+            </ul>
+            <a href="services.html" class="cube-more">View Page <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="cube-slot">
-      <div class="cube">
-        <div class="cf front">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg></div>
-          <h3>Industrial<br>Trading</h3>
-        </div>
-        <div class="cf left"></div>
-        <div class="cf right"></div>
-        <div class="cf top">
-          <div class="top-title"></div>
-          <a href="#">Safety Items</a>
-          <a href="#">Tools</a>
-          <a href="#">Electrical</a>
-          <a href="#">Consumables</a>
-        </div>
-      </div>
     </div>
-
   </div>
-</div>
+</section>
 
-
+<!-- ============ STATS ============ -->
 <section class="stats-section">
-    <div class="stats-container">
-
-        <div class="stat-box">
-            <h2><span data-count="15">0</span>+</h2>
-            <p>Years Experience</p>
-        </div>
-
-        <div class="stat-box">
-            <h2><span data-count="500">0</span>+</h2>
-            <p>Employees</p>
-        </div>
-
-        <div class="stat-box">
-            <h2><span data-count="250">0</span>+</h2>
-            <p>Projects Completed</p>
-        </div>
-
-        <div class="stat-box">
-            <h2><span data-count="100">0</span>+</h2>
-            <p>Clients Served</p>
-        </div>
-
-    </div>
+  <div class="container stats-grid" id="statsGrid">
+    <div class="stat"><div class="stat-num" data-target="250">0</div><span class="stat-suffix">+</span><div class="stat-bar"></div><div class="stat-label">Completed Projects</div></div>
+    <div class="stat"><div class="stat-num" data-target="10">0</div><span class="stat-suffix">+</span><div class="stat-bar"></div><div class="stat-label">Years Experience</div></div>
+    <div class="stat"><div class="stat-num" data-target="500">0</div><span class="stat-suffix">+</span><div class="stat-bar"></div><div class="stat-label">Skilled Workforce</div></div>
+    <div class="stat"><div class="stat-num" data-target="150">0</div><span class="stat-suffix">+</span><div class="stat-bar"></div><div class="stat-label">Satisfied Clients</div></div>
+  </div>
 </section>
-<!-- ============ WELCOME / INTRO ============ -->
-<section class="section welcome" id="about">
-  
-  <div class="container">
-    <div class="grid">
-      <div class="welcome-media reveal">
-        <div class="frame"></div>
-        <div class="badge"><b>15+</b><span>Years Combined Expertise</span></div>
+
+<!-- ============ ABOUT ============ -->
+<section class="about-section" id="about">
+  <div class="container about-grid">
+    <div class="about-left reveal">
+      <div class="eyebrow"><span>Welcome to Nash Arabia</span></div>
+      <h2>Building Excellence in <span class="text-orange">Contracting</span> &amp; Manpower</h2>
+      <p class="lead" style="font-size: 1.15rem; color: var(--ink-soft); margin: 15px 0;">We are a multi-service organization delivering reliable manpower, engineering, construction, and facility management solutions across Saudi Arabia.</p>
+      <p style="color: var(--ink-soft); margin-bottom: 24px;">Our services cover rental manpower and equipment, overseas recruitment, trading, mechanical and civil works, facility management, laundry services, and camp facilities.</p>
+      <ul class="check-list" style="list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:30px; font-weight:600; color:var(--charcoal);">
+        <li>✓ ISO Certified Operations</li>
+        <li>✓ 24/7 Support Services</li>
+        <li>✓ Kingdom-wide Coverage</li>
+        <li>✓ Trusted by Industry Leaders</li>
+      </ul>
+      <a href="about.html" class="btn btn-primary">Know More →</a>
+    </div>
+    <div class="about-right reveal">
+      <div class="media-frame" style="border-radius:var(--radius); aspect-ratio:4/3;">
+        <img src="images/about.png" alt="Nash Arabia Operations" style="width:100%; height:100%; object-fit:cover;" />
       </div>
-      <div class="welcome-text reveal">
-        <div class="eyebrow">Who We Are</div>
-        <h2>Built on Reliability. Trusted Across Saudi Arabia.</h2>
-        <p>Nash Arabia General Contracting Co. is a Saudi-based provider of manpower, equipment and industrial trading services, supporting construction, oil &amp; gas, and infrastructure projects with a single point of accountability from mobilization to closeout.</p>
-        <p>Our teams are vetted, our fleet is maintained to strict standards, and our supply chain is built to keep your site running without delay — because in this industry, downtime costs more than diligence.</p>
-        <ul class="welcome-points">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Fully licensed &amp; compliant with Saudi labour law</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Rapid mobilization across Eastern Province &amp; beyond</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Dedicated account managers for every contract</li>
-        </ul>
+      <div class="about-badge" style="position:absolute; bottom:-20px; left:-20px; background:var(--orange); color:#fff; padding:22px; box-shadow:0 15px 30px rgba(0,0,0,0.15); border-radius:var(--radius);">
+        <div class="badge-num" style="font-family:var(--font-display); font-size:40px; font-weight:700; line-height:1;">10+</div>
+        <div class="badge-label" style="font-size:11px; text-transform:uppercase; letter-spacing:0.1em; font-weight:700; margin-top:4px;">Years of proven industry excellence</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ ABOUT HIGHLIGHTS ============ -->
-<section class="section section-off">
+<!-- ============ MISSION/VISION ============ -->
+<section class="mv-section" style="background:var(--off-white); padding:90px 0;">
   <div class="container">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center;">Company Foundations</div>
-      <h2>What Guides Every Project We Deliver</h2>
-      <p style="margin:0 auto;">Six commitments that define how we plan, staff and execute — from the boardroom to the job site.</p>
+    <div class="sec-head">
+      <div class="eyebrow"><span>Who We Are</span></div>
+      <h2>Guided by Purpose, Driven by Standards</h2>
     </div>
-    <div class="highlights-grid reveal">
-      <div class="highlight-card">
-        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/></svg></div>
-        <h3>Our Vision</h3>
-        <p>To be the most trusted contracting partner in Saudi Arabia's industrial and construction sectors.</p>
-      </div>
-      <div class="highlight-card">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1.5 7-6.5-3.5L5 21l1.5-7-5-5 7-1z"/></svg></div>
-        <h3>Our Mission</h3>
-        <p>Deliver skilled manpower, equipment and materials on schedule, in full compliance, without compromise.</p>
-      </div>
-      <div class="highlight-card">
-        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3"/><path d="M5 21c0-4 3-6.5 7-6.5s7 2.5 7 6.5"/></svg></div>
-        <h3>Management</h3>
-        <p>An experienced leadership team with decades of combined industrial and contracting expertise.</p>
-      </div>
-      <div class="highlight-card">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7z"/></svg></div>
-        <h3>Safety Policy</h3>
-        <p>Zero-incident targets backed by strict HSE protocols and continuous site inspection.</p>
-      </div>
-      <div class="highlight-card">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
-        <h3>Quality Policy</h3>
-        <p>ISO-aligned processes ensuring consistent standards across every deployment and delivery.</p>
-      </div>
-      <div class="highlight-card">
-        <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></div>
-        <h3>Main Services</h3>
-        <p>Manpower, equipment rental, facility management, industrial trading and porta cabin solutions.</p>
-      </div>
+    <div class="grid-6" style="border-radius:var(--radius); overflow:hidden;">
+      <div class="feature-card reveal"><span class="feature-num">01</span><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Mission</h3><p>Deliver exceptional contracting and manpower solutions that exceed client expectations.</p></div>
+      <div class="feature-card reveal reveal-delay-1"><span class="feature-num">02</span><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg></div><h3>Vision</h3><p>To be the Kingdom's most trusted partner for integrated industrial services.</p></div>
+      <div class="feature-card reveal reveal-delay-2"><span class="feature-num">03</span><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Safety Policy</h3><p>Zero-compromise health and safety across every site and operation.</p></div>
+      <div class="feature-card reveal"><span class="feature-num">04</span><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><h3>Quality Policy</h3><p>ISO-aligned quality management embedded in every project deliverable.</p></div>
+      <div class="feature-card reveal reveal-delay-1"><span class="feature-num">05</span><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Management</h3><p>Experienced leadership guiding operations with integrity and vision.</p></div>
+      <div class="feature-card reveal reveal-delay-2"><span class="feature-num">06</span><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3>Core Services</h3><p>Manpower, equipment, trading, and facility management under one roof.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ============ SERVICES (PREMIUM CARDS) ============ -->
-<section class="section" id="services">
+<!-- ============ SERVICES ============ -->
+<section class="services-section" id="services" style="padding:90px 0;">
   <div class="container">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center;">What We Offer</div>
-      <h2>Six Ways We Support Your Site</h2>
-      <p style="margin:0 auto;">From skilled workforce to structural materials, every service is built to keep your project moving efficiently and safely.</p>
+    <div class="sec-head">
+      <div class="eyebrow"><span>What We Offer</span></div>
+      <h2>Our Core Services</h2>
+      <p>From supply to operations — comprehensive support lines across the Kingdom.</p>
     </div>
-    <div class="services-grid reveal">
-      <a href="#" class="service-card">
-        <div class="service-image"></div>
-        <div class="service-content">
-          <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.2"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg></div>
+    <div class="services-grid">
+      <!-- 1 -->
+      <article class="service-card reveal">
+        <div class="service-media">
+          <img src="images/rentalmanpower.png" alt="Rental Manpower" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;" />
+        </div>
+        <div class="service-body">
           <h3>Rental Manpower</h3>
-          <p>Skilled, semi-skilled and general labour supplied for construction, industrial and infrastructure projects.</p>
-          <span class="more">Learn More →</span>
+          <p>Flexible skilled, semi-skilled, and certified workforce available for short and long-term industrial deployments.</p>
+          <a href="manpower.html" class="service-link">Read More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
-      </a>
-      <a href="#" class="service-card">
-        <div class="service-image"></div>
-        <div class="service-content">
-          <div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><path d="M17 4l2 2 4-4"/></svg></div>
+      </article>
+      <!-- 2 -->
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-media">
+          <img src="images/overseas-recruitment.png" alt="Overseas Recruitment" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;" />
+        </div>
+        <div class="service-body">
           <h3>Overseas Recruitment</h3>
-          <p>Complete recruitment including sourcing, screening, visa processing and workforce mobilization.</p>
-          <span class="more">Learn More →</span>
+          <p>Global sourcing and end-to-end recruitment of highly qualified technical and managerial professionals.</p>
+          <a href="overseas_recruitment.html" class="service-link">Read More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
-      </a>
-      <a href="#" class="service-card">
-        <div class="service-image"></div>
-        <div class="service-content">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 16l2-7h6l2 7"/><circle cx="7" cy="18" r="1.8"/><circle cx="16" cy="18" r="1.8"/><path d="M13 16h6l2-4h-4"/></svg></div>
+      </article>
+      <!-- 3 -->
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-media">
+          <img src="images/rentalequipment.png" alt="Rental Equipment" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;" />
+        </div>
+        <div class="service-body">
           <h3>Rental Equipment</h3>
-          <p>Cranes, generators, forklifts, scaffolding and heavy construction equipment.</p>
-          <span class="more">Learn More →</span>
+          <p>Modern fleet of heavy machinery, earthmoving equipment, mobile cranes, generators, and site units.</p>
+          <a href="rental_equipment.html" class="service-link">Read More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
-      </a>
-      <a href="#" class="service-card">
-        <div class="service-image"></div>
-        <div class="service-content">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg></div>
-          <h3>Industrial Trading</h3>
-          <p>Industrial materials, electrical products, valves, fittings and safety equipment.</p>
-          <span class="more">Learn More →</span>
+      </article>
+      <!-- 4 -->
+      <article class="service-card reveal">
+        <div class="service-media">
+          <img src="images/trading.png" alt="Industrial Trading" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;" />
         </div>
-      </a>
-      <a href="#" class="service-card">
-        <div class="service-image"></div>
-        <div class="service-content">
-          <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/></svg></div>
+        <div class="service-body">
+          <h3>Trading Services</h3>
+          <p>Supplier of quality structural steel, safety equipment, piping materials, electrical items, and tools.</p>
+          <a href="trading.html" class="service-link">Read More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+      <!-- 5 -->
+      <article class="service-card reveal reveal-delay-1">
+        <div class="service-media">
+          <img src="images/facilitymanagement.png" alt="Facility Management" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;" />
+        </div>
+        <div class="service-body">
           <h3>Facility Management</h3>
-          <p>Building maintenance, MEP services, housekeeping and complete facility support.</p>
-          <span class="more">Learn More →</span>
+          <p>Preventive maintenance, MEP works, planned camp operations, catering, laundry, and soft support services.</p>
+          <a href="facility_management.html" class="service-link">Read More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
-      </a>
-      <a href="#" class="service-card">
-        <div class="service-image"></div>
-        <div class="service-content">
-          <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="10" rx="1"/><path d="M3 8l3-4h12l3 4"/><path d="M9 18v-5h6v5"/></svg></div>
+      </article>
+      <!-- 6 -->
+      <article class="service-card reveal reveal-delay-2">
+        <div class="service-media">
+          <img src="images/portacabin.png" alt="Porta Cabin Rental" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;" />
+        </div>
+        <div class="service-body">
           <h3>Porta Cabin Rental</h3>
-          <p>Portable offices, accommodation, security cabins and storage solutions for project sites.</p>
-          <span class="more">Learn More →</span>
+          <p>Custom modular site cabins, temporary accommodation containers, secure portable offices, and camp assemblies.</p>
+          <a href="porta_cabin_rental.html" class="service-link">Read More <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
-      </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUSTAINABILITY ============ -->
+<section class="section-dark" style="padding:90px 0; background:linear-gradient(135deg, #17181A 0%, #0F172A 100%);">
+  <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+    <div class="reveal">
+      <div class="eyebrow"><span>Sustainability</span></div>
+      <h2 style="color:#fff;">Building Sustainable Infrastructure for <span class="text-orange">Tomorrow</span></h2>
+      <p style="color:rgba(255,255,255,0.8); font-size:1.1rem; line-height:1.75; margin-top:20px;">Health, safety, quality assurance, environmental responsibility, and sustainable project execution guide every decision we make.</p>
+    </div>
+    <div class="reveal reveal-delay-1" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+      <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:24px; border-radius:var(--radius);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" style="width:24px; height:24px; margin-bottom:12px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+        <div style="font-weight:700; color:#fff; font-size:15px;">Safety Compliance</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:24px; border-radius:var(--radius);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" style="width:24px; height:24px; margin-bottom:12px;"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+        <div style="font-weight:700; color:#fff; font-size:15px;">On-Time Delivery</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:24px; border-radius:var(--radius);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" style="width:24px; height:24px; margin-bottom:12px;"><path d="M2 16V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><path d="M6 22h12M10 18v4M14 18v4"/></svg>
+        <div style="font-weight:700; color:#fff; font-size:15px;">Modern Tech</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); padding:24px; border-radius:var(--radius);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" style="width:24px; height:24px; margin-bottom:12px;"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <div style="font-weight:700; color:#fff; font-size:15px;">Quality Assurance</div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============ PROJECTS ============ -->
-<section class="section section-off" id="projects">
+<section class="projects-section" id="projects" style="padding:90px 0;">
   <div class="container">
-    <div class="section-head reveal">
-      <div class="eyebrow">Our Work</div>
-      <h2>Projects Across Every Sector We Serve</h2>
-      <p>A selection of the sites where our manpower, equipment and materials have kept schedules on track.</p>
+    <div class="sec-head">
+      <div class="eyebrow"><span>Portfolio</span></div>
+      <h2>Our Ongoing Projects</h2>
+      <p>Delivering engineering, manpower, and construction solutions for key developers in the Kingdom.</p>
     </div>
-    <div class="filter-bar reveal">
-      <button class="filter-btn active" data-filter="all">All Projects</button>
-      <button class="filter-btn" data-filter="oil">Oil &amp; Gas</button>
+    <div class="filters">
+      <button class="filter-btn is-active" data-filter="all">All</button>
       <button class="filter-btn" data-filter="construction">Construction</button>
-      <button class="filter-btn" data-filter="maintenance">Industrial Maintenance</button>
-      <button class="filter-btn" data-filter="fabrication">Fabrication</button>
+      <button class="filter-btn" data-filter="manpower">Manpower</button>
+      <button class="filter-btn" data-filter="facility">Facility</button>
+      <button class="filter-btn" data-filter="equipment">Equipment</button>
+      <button class="filter-btn" data-filter="trading">Trading</button>
     </div>
-    <div class="projects-grid reveal" id="projectsGrid">
-      <div class="project-card" data-cat="oil"><div class="pimg"></div><div class="overlay"><div class="tag">Oil &amp; Gas</div><h4>Jubail Refinery Support</h4></div></div>
-      <div class="project-card" data-cat="construction"><div class="pimg"></div><div class="overlay"><div class="tag">Construction</div><h4>Dammam Logistics Hub</h4></div></div>
-      <div class="project-card" data-cat="maintenance"><div class="pimg"></div><div class="overlay"><div class="tag">Industrial Maintenance</div><h4>Petrochemical Plant Turnaround</h4></div></div>
-      <div class="project-card" data-cat="fabrication"><div class="pimg"></div><div class="overlay"><div class="tag">Fabrication</div><h4>Structural Steel Package</h4></div></div>
-      <div class="project-card" data-cat="oil"><div class="pimg"></div><div class="overlay"><div class="tag">Oil &amp; Gas</div><h4>Offshore Platform Manpower</h4></div></div>
-      <div class="project-card" data-cat="construction"><div class="pimg"></div><div class="overlay"><div class="tag">Construction</div><h4>Al‑Khobar Commercial Tower</h4></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CLIENTS ============ -->
-<section class="section" id="clients">
-  <div class="container">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center;">Trusted By</div>
-      <h2>Clients Who Rely on Our Delivery</h2>
-    </div>
-  </div>
-  <div class="clients-track reveal">
-    <div class="clients-row">
-      <div class="logo">ARAMCO</div><div class="logo">SABIC</div><div class="logo">SEC</div><div class="logo">MAADEN</div>
-      <div class="logo">ROYAL COMMISSION</div><div class="logo">SADARA</div><div class="logo">SIPCHEM</div>
-      <div class="logo">ARAMCO</div><div class="logo">SABIC</div><div class="logo">SEC</div><div class="logo">MAADEN</div>
-      <div class="logo">ROYAL COMMISSION</div><div class="logo">SADARA</div><div class="logo">SIPCHEM</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CERTIFICATIONS ============ -->
-<section class="section section-off" id="certifications">
-  <div class="container">
-    <div class="section-head center reveal">
-      <div class="eyebrow" style="justify-content:center;">Compliance &amp; Standards</div>
-      <h2>Certified. Approved. Accountable.</h2>
-    </div>
-    <div class="certs-grid reveal">
-      <div class="cert-card">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V6z"/></svg></div>
-        <h3>ISO 9001:2015</h3>
-        <p>Quality management systems certified for consistent, auditable delivery.</p>
+    <div class="projects-grid">
+      <!-- P1 -->
+      <div class="project-card reveal" data-cat="construction">
+        <div class="project-overlay">
+          <div class="project-tag">Construction</div>
+          <h3>Industrial Complex Expansion</h3>
+          <span>Riyadh Industrial Area</span>
+        </div>
       </div>
-      <div class="cert-card">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7z"/></svg></div>
-        <h3>ISO 45001</h3>
-        <p>Occupational health &amp; safety management aligned with international standards.</p>
+      <!-- P2 -->
+      <div class="project-card reveal reveal-delay-1" data-cat="manpower">
+        <div class="project-overlay">
+          <div class="project-tag">Manpower</div>
+          <h3>Refinery Manpower Deployment</h3>
+          <span>Jubail Refinery Project</span>
+        </div>
       </div>
-      <div class="cert-card">
-        <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
-        <h3>Vendor Approvals</h3>
-        <p>Pre-qualified and approved vendor status with leading Saudi industrial operators.</p>
+      <!-- P3 -->
+      <div class="project-card reveal reveal-delay-2" data-cat="facility">
+        <div class="project-overlay">
+          <div class="project-tag">Facility</div>
+          <h3>Camp Facility Management</h3>
+          <span>Eastern Province Camp Support</span>
+        </div>
+      </div>
+      <!-- P4 -->
+      <div class="project-card reveal" data-cat="equipment">
+        <div class="project-overlay">
+          <div class="project-tag">Equipment</div>
+          <h3>Heavy Equipment Rental</h3>
+          <span>NEOM Infrastructure Support</span>
+        </div>
+      </div>
+      <!-- P5 -->
+      <div class="project-card reveal reveal-delay-1" data-cat="construction">
+        <div class="project-overlay">
+          <div class="project-tag">Construction</div>
+          <h3>Civil Works Program</h3>
+          <span>Dammam Pipeline Works</span>
+        </div>
+      </div>
+      <!-- P6 -->
+      <div class="project-card reveal reveal-delay-2" data-cat="trading">
+        <div class="project-overlay">
+          <div class="project-tag">Trading</div>
+          <h3>Materials Supply Contract</h3>
+          <span>Riyadh Commercial Towers</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ WHY CHOOSE US / COUNTERS ============ -->
-<section class="counters">
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section-dark" style="background:#111214; padding:90px 0;">
   <div class="container">
-    <div class="counters-grid">
-      <div><b data-count="500">0</b><span>Manpower Supplied</span></div>
-      <div><b data-count="120">0</b><span>Projects Completed</span></div>
-      <div><b data-count="15">0</b><span>Years Experience</span></div>
-      <div><b>24/7</b><span>Site Support</span></div>
+    <div class="sec-head">
+      <div class="eyebrow"><span>Testimonials</span></div>
+      <h2 style="color:#fff;">What Clients Say</h2>
     </div>
-  </div>
-</section>
-
-<!-- ============ CONTACT ============ -->
-<section class="section" id="contact">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="eyebrow">Get In Touch</div>
-      <h2>Request a Quote or Ask Us Anything</h2>
-      <p>Tell us about your manpower, equipment or trading requirement and our team will respond within one business day.</p>
-    </div>
-    <div class="contact-grid reveal">
-      <div>
-        <div class="contact-info-card">
-          <h3>Contact Details</h3>
-          <div class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
-            <div><b>Address</b><span>Industrial Area, Al‑Jubail, Eastern Province, Saudi Arabia</span></div>
-          </div>
-          <div class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.3 21 3 14.7 3 6a2 2 0 0 1 1-2z"/></svg>
-            <div><b>Phone</b><span>+966 13 361 1560</span></div>
-          </div>
-          <div class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
-            <div><b>Email</b><span>info@nasharabia.com</span></div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <p>"Nash Arabia consistently delivers reliable manpower and equipment on schedule. Their safety standards are impeccable."</p>
+        <div class="testi-who">
+          <div class="testi-avatar">AM</div>
+          <div>
+            <b>Al Mustaq Bin Mohammed</b>
+            <span>Project Director, Aramco Partner</span>
           </div>
         </div>
-        <div class="map-box">Google Map placeholder — embed your map iframe here</div>
       </div>
-      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks — this is a design preview, hook this form up to your backend or a form service.');">
+      <div class="testi-card reveal reveal-delay-1">
+        <p>"A dependable partner across multiple industrial projects. Professional teams and responsive management."</p>
+        <div class="testi-who">
+          <div class="testi-avatar">NM</div>
+          <div>
+            <b>Nathan Marshall</b>
+            <span>Operations Lead, Petrofac</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal reveal-delay-2">
+        <p>"Their overseas recruitment saved us months. Skilled workforce arrived certified and ready."</p>
+        <div class="testi-who">
+          <div class="testi-avatar">AS</div>
+          <div>
+            <b>Adil Sheikh</b>
+            <span>Site Manager, GS E&amp;C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / QUOTE ============ -->
+<section class="contact-section" id="contact" style="padding:90px 0;">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow"><span>Get In Touch</span></div>
+      <h2>Request a Quote or <span class="text-orange">Consultation</span></h2>
+      <p class="lead" style="font-size:1.15rem; color:var(--ink-soft); margin:15px 0 35px 0;">Reach out to discuss your project. Our team responds within one business day with tailored proposals.</p>
+      
+      <div class="contact-info-card">
+        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M12 2C7 2 3 6 3 11c0 6.5 9 11 9 11s9-4.5 9-11c0-5-4-9-9-9zm0 12a3 3 0 110-6 3 3 0 010 6z" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+        <div>
+          <h4>Head Office</h4>
+          <p>Al Olaya District, King Fahd Road, Riyadh, Saudi Arabia</p>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c1 .3 2 .5 3 .7a2 2 0 0 1 1.7 2Z" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+        <div>
+          <h4>Phone</h4>
+          <p>+966 50 000 0000</p>
+        </div>
+      </div>
+      <div class="contact-info-card">
+        <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="m3 7 9 6 9-6M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+        <div>
+          <h4>Email</h4>
+          <p>info@nasharabia.com</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="reveal reveal-delay-1">
+      <form class="form-card contact-form" id="quoteForm">
         <div class="form-row">
-          <input type="text" placeholder="Full Name" required>
-          <input type="text" placeholder="Company" >
+          <div class="field">
+            <label>Your Name</label>
+            <input type="text" placeholder="John Doe" required />
+          </div>
+          <div class="field">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com" required />
+          </div>
         </div>
-        <div class="form-row">
-          <input type="email" placeholder="Email Address" required>
-          <input type="tel" placeholder="Phone Number">
+        <div class="field">
+          <label>Subject</label>
+          <input type="text" placeholder="Manpower Inquiry" required />
         </div>
-        <textarea placeholder="Tell us about your requirement..." required></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <div class="field">
+          <label>Your Message</label>
+          <textarea rows="6" placeholder="Describe your project requirements..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message →</button>
+        <div class="form-success">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:20px; height:20px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          <span>Thanks — we'll be in touch shortly.</span>
+        </div>
       </form>
     </div>
   </div>
 </section>
 
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
+<!-- ============ CLIENTS ============ -->
+<section class="clients-section" style="padding:60px 0; background:var(--off-white); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <div class="footer-brand">
-          <img src="logo.png" alt="Nash Arabia logo">
-          <span>NASH ARABIA</span>
-        </div>
-        <p>Manpower, equipment and industrial trading for construction, industrial and oil &amp; gas projects across Saudi Arabia.</p>
-        <div class="footer-social">
-          <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2 2 0 0 1 4 0V17M12 17v-7"/></svg></a>
-          <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
-          <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.5"/></svg></a>
-        </div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>Saudi Aramco</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>SABIC</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>Petrofac</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>GS E&amp;C</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>Daewoo E&amp;C</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>Sungchang</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>Korea Rental Corp</b></div>
+        
+        <!-- Duplicate for Marquee Loop -->
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>Saudi Aramco</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>SABIC</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>Petrofac</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>GS E&amp;C</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>Daewoo E&amp;C</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>Sungchang</b></div>
+        <div class="client-logo"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><b>Korea Rental Corp</b></div>
       </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#">Rental Manpower</a></li>
-          <li><a href="#">Overseas Recruitment</a></li>
-          <li><a href="#">Rental Equipment</a></li>
-          <li><a href="#">Industrial Trading</a></li>
-          <li><a href="#">Facility Management</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>Industrial Area, Al‑Jubail,<br>Eastern Province, Saudi Arabia</p>
-        <p style="margin-top:10px;">+966 13 361 1560<br>info@nasharabia.com</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 Nash Arabia General Contracting Co. All rights reserved.</span>
-      <span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></span>
     </div>
   </div>
-</footer>
+</section>
 
-<!-- <script>
-  // Sticky header shadow
-  var header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', function(){
-    header.classList.toggle('scrolled', window.scrollY > 20);
-  });
+<!-- ============ FOOTER Component ============ -->
+<div id="site-footer"></div>
 
-  // Mobile menu toggle
-  document.getElementById('burgerBtn').addEventListener('click', function(){
-    document.querySelector('nav.links').classList.toggle('mobile-open');
-    this.classList.toggle('open');
-  });
+<!-- Back to top button -->
+<button class="to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
 
-  // Hero slider
-  (function(){
-    var slides = document.querySelectorAll('.hero-slide');
-    var dotsWrap = document.getElementById('heroDots');
-    var current = 0;
-    slides.forEach(function(_, i){
-      var d = document.createElement('span');
-      if(i===0) d.classList.add('active');
-      d.addEventListener('click', function(){ goTo(i); });
-      dotsWrap.appendChild(d);
-    });
-    var dots = dotsWrap.querySelectorAll('span');
-    function goTo(i){
-      slides[current].classList.remove('active');
-      dots[current].classList.remove('active');
-      current = (i + slides.length) % slides.length;
-      slides[current].classList.add('active');
-      dots[current].classList.add('active');
-    }
-    document.getElementById('heroNext').addEventListener('click', function(){ goTo(current+1); });
-    document.getElementById('heroPrev').addEventListener('click', function(){ goTo(current-1); });
-    setInterval(function(){ goTo(current+1); }, 6000);
-  })();
-
-  // 3D service cube tap support (touch devices)
-  document.querySelectorAll('.cube-slot').forEach(function(box){
-    box.addEventListener('click', function(){
-      var wasOpen = box.classList.contains('touched');
-      document.querySelectorAll('.cube-slot').forEach(function(b){ b.classList.remove('touched'); });
-      if(!wasOpen) box.classList.add('touched');
-    });
-  });
-
-  // Scroll reveal
-  var revealEls = document.querySelectorAll('.reveal');
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
-    });
-  }, {threshold:.15});
-  revealEls.forEach(function(el){ io.observe(el); });
-
-  // Animated counters
-  var counters = document.querySelectorAll('[data-count]');
-  var counted = false;
-  function runCounters(){
-    if(counted) return;
-    counted = true;
-    counters.forEach(function(el){
-      var target = parseInt(el.getAttribute('data-count'), 10);
-      var start = 0;
-      var duration = 1400;
-      var startTime = null;
-      function step(ts){
-        if(!startTime) startTime = ts;
-        var progress = Math.min((ts - startTime) / duration, 1);
-        el.textContent = Math.floor(progress * target) + (progress===1 ? '+' : '');
-        if(progress < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    });
-  }
-  var counterIO = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){ if(e.isIntersecting) runCounters(); });
-  }, {threshold:.4});
-  document.querySelectorAll('.hero-stats, .counters').forEach(function(el){ counterIO.observe(el); });
-
-  // Project filter
-  var filterBtns = document.querySelectorAll('.filter-btn');
-  var projectCards = document.querySelectorAll('.project-card');
-  filterBtns.forEach(function(btn){
-    btn.addEventListener('click', function(){
-      filterBtns.forEach(function(b){ b.classList.remove('active'); });
-      btn.classList.add('active');
-      var f = btn.getAttribute('data-filter');
-      projectCards.forEach(function(card){
-        card.classList.toggle('hide', f !== 'all' && card.getAttribute('data-cat') !== f);
-      });
-    });
-  });
-</script> -->
-<script src="script.js"></script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
