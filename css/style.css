@@ -899,7 +899,7 @@ h2 {
 /* ==========================================================================
    3D ROTATING BOX CARDS (Sitting Overlapping Hero bottom)
    ========================================================================== */
-.service-float {
+/* .service-float {
   position: relative;
   z-index: 20;
   margin-top: -120px;
@@ -1076,6 +1076,18 @@ h2 {
 
 .cube-more:hover svg {
   transform: translateX(4px);
+} */
+.cube-container{
+    height:220px;
+    perspective:1200px;
+}
+
+.cube-face.front{
+    transform:translateZ(110px);
+}
+
+.cube-face.top{
+    transform:rotateX(90deg) translateZ(110px);
 }
 
 /* Responsive Service Cards */
