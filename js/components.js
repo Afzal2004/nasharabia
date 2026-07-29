@@ -60,7 +60,8 @@
         <img src="logo.png" alt="Nash Arabia General Contracting Co. logo" class="brand-mark">
       </a>
     </div>
-  </nav>`;
+  </nav>
+  <div class="nav-backdrop" id="navBackdrop"></div>`;
 
   // Footer HTML
   const footerHTML = `
@@ -134,21 +135,6 @@
       if(navbar) navbar.classList.toggle('is-stuck', window.scrollY > 30);
     });
 
-    // mobile toggle
-    const toggle = document.getElementById('navToggle');
-    const links = document.getElementById('navLinks');
-    if(toggle && links){
-      toggle.addEventListener('click', () => {
-        toggle.classList.toggle('open');
-        links.classList.toggle('open');
-      });
-      // close menu when any link (excluding services toggle on mobile) is clicked
-      links.querySelectorAll('a:not(.nav-dropdown-wrap > a)').forEach(a => a.addEventListener('click', () => {
-        toggle.classList.remove('open');
-        links.classList.remove('open');
-      }));
-    }
-
     if(window.initPageAnimations) window.initPageAnimations();
   });
-})();
+})();;
