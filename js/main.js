@@ -20,21 +20,30 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------- Mobile Navigation Toggle ---------- */
   var navToggle = document.getElementById('navToggle');
   var navLinks = document.getElementById('navLinks');
+  var navBackdrop = document.getElementById('navBackdrop');
+
+  function closeMobileNav() {
+    if (navToggle) navToggle.classList.remove('open');
+    if (navLinks) navLinks.classList.remove('open');
+    if (navBackdrop) navBackdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  }
   
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', function () {
       var isOpen = navLinks.classList.toggle('open');
       navToggle.classList.toggle('open', isOpen);
+      if (navBackdrop) navBackdrop.classList.toggle('open', isOpen);
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
+    if (navBackdrop) {
+      navBackdrop.addEventListener('click', closeMobileNav);
+    }
+
     // Close menu when clicking links (except dropdown trigger)
     navLinks.querySelectorAll('a:not(.nav-dropdown-wrap > a)').forEach(function (a) {
-      a.addEventListener('click', function () {
-        navToggle.classList.remove('open');
-        navLinks.classList.remove('open');
-        document.body.style.overflow = '';
-      });
+      a.addEventListener('click', closeMobileNav);
     });
   }
 
@@ -183,6 +192,45 @@ document.addEventListener('DOMContentLoaded', function () {
       var suffix = el.getAttribute('data-suffix') || '';
       el.textContent = target + suffix;
     });
+  }
+
+  /* ---------- Homepage Stats Counter Animation ---------- */
+  var statsGrid = document.getElementById("statsGrid");
+  if (statsGrid) {
+    if ('IntersectionObserver' in window) {
+      var statsObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var numbers = entry.target.querySelectorAll('.stat-num');
+          numbers.forEach(function (el) {
+            var target = parseInt(el.getAttribute('data-target'), 10);
+            var duration = 2000;
+            var startTime = null;
+
+            function animate(timestamp) {
+              if (!startTime) startTime = timestamp;
+              var progress = Math.min((timestamp - startTime) / duration, 1);
+              var easeProgress = 1 - Math.pow(1 - progress, 3); // cubic ease-out
+              el.textContent = Math.floor(easeProgress * target);
+
+              if (progress < 1) {
+                requestAnimationFrame(animate);
+              } else {
+                el.textContent = target;
+              }
+            }
+            requestAnimationFrame(animate);
+          });
+          statsObserver.unobserve(entry.target);
+        });
+      }, { threshold: 0.2 });
+      statsObserver.observe(statsGrid);
+    } else {
+      // Fallback: load instantly
+      statsGrid.querySelectorAll('.stat-num').forEach(function (el) {
+        el.textContent = el.getAttribute('data-target');
+      });
+    }
   }
 
   /* ---------- Project Categories Filter ---------- */
