@@ -599,6 +599,24 @@ h2 {
   background: #ffffff;
 }
 
+/* Navigation Backdrop Overlay */
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 12, 16, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s var(--ease), visibility 0.35s var(--ease);
+  z-index: 180;
+}
+
+.nav-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media (max-width: 1080px) {
   .nav-toggle {
     display: flex;
@@ -609,18 +627,19 @@ h2 {
     position: fixed;
     top: 0;
     right: 0;
-    width: min(300px, 80vw);
+    width: min(320px, 85vw);
     height: 100vh;
     background: var(--charcoal);
     flex-direction: column;
     align-items: stretch;
-    padding: 100px 0 40px 0;
+    padding: 90px 0 40px 0;
     transform: translateX(100%);
     transition: transform 0.4s var(--ease);
     z-index: 200;
     overflow-y: auto;
     gap: 0;
     order: 1;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
   }
   
   .nav-links.open {
@@ -631,6 +650,10 @@ h2 {
   .nav-dropdown-wrap > a {
     color: #ffffff;
     padding: 16px 24px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
   
@@ -654,13 +677,16 @@ h2 {
   }
   
   .nav-dropdown-wrap.open .dropdown {
-    max-height: 400px;
+    max-height: 450px;
     padding: 8px 0;
   }
   
   .dropdown a {
     color: #cfd2d6;
     padding: 12px 36px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   }
   
@@ -675,6 +701,28 @@ h2 {
     box-shadow: none;
     border: none;
     order: 1;
+  }
+}
+
+@media (max-width: 440px) {
+  .navbar .container {
+    height: 72px;
+    padding: 0 16px;
+  }
+  .brand {
+    padding: 4px 6px;
+    gap: 8px;
+  }
+  .b1 {
+    font-size: 15px;
+  }
+  .b2 {
+    font-size: 7px;
+    letter-spacing: .1em;
+  }
+  .brand-mark {
+    width: 26px;
+    height: 34px;
   }
 }
 
@@ -868,7 +916,59 @@ h2 {
 
 @media (max-width: 900px) {
   .hero-arrows { display: none; }
-  .hero-dots { bottom: 120px; }
+  .hero-dots { bottom: 140px; }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 520px;
+    padding: 110px 0 70px;
+  }
+  .hero-content {
+    margin: 0 auto 30px;
+    padding: 0 16px;
+  }
+  .hero-title-box {
+    padding: 14px 20px;
+    border-left-width: 4px;
+  }
+  .hero-desc-box {
+    padding: 16px 20px;
+    border-left-width: 4px;
+    margin-bottom: 22px;
+  }
+  .hero-dots {
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 95px 0 55px;
+  }
+  .hero-title-box {
+    padding: 12px 14px;
+  }
+  .hero-title-box h1 {
+    font-size: clamp(20px, 5.5vw, 30px);
+  }
+  .hero-desc-box {
+    padding: 14px 14px;
+  }
+  .hero-desc-box p {
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .hero-ctas .btn {
+    width: 100%;
+    padding: 13px 20px;
+  }
 }
 
 .hero-arrow {
@@ -1078,42 +1178,45 @@ h2 {
   transform: translateX(4px);
 }
 
-/* Responsive Service Cards */
+/* Responsive Service Float Cards */
 @media (max-width: 980px) {
   .service-float {
-    margin-top: -80px;
+    margin-top: -60px;
   }
   .service-float-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
     box-shadow: none;
+    background: transparent;
   }
   .cube-container {
     height: 240px;
   }
   .cube-face.front {
     transform: rotateX(0deg) translateZ(120px);
-    border-right: 1px solid rgba(255, 255, 255, 0.08);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: none;
+    border-radius: var(--radius) var(--radius) 0 0;
   }
   .cube-face.top {
     transform: rotateX(90deg) translateZ(120px);
+    border-radius: 0 0 var(--radius) var(--radius);
   }
 }
 
 @media (max-width: 640px) {
   .service-float {
-    margin-top: -40px;
-    padding: 0 16px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   .service-float-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
   }
   .cube-container {
     height: auto;
-    min-height: auto;
+    min-height: 210px;
+    perspective: none;
   }
-  /* Stacks flat on mobile screen */
   .cube {
     transform: none !important;
     transform-style: flat;
@@ -1122,17 +1225,25 @@ h2 {
     position: relative;
     transform: none !important;
     height: auto;
+    backface-visibility: visible;
   }
   .cube-face.front {
-    padding: 34px 24px 18px;
-    border-right: none;
-    border-bottom: none;
+    padding: 24px 16px 14px;
     border-radius: var(--radius) var(--radius) 0 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: none;
   }
   .cube-face.top {
-    padding: 12px 24px 34px;
-    border-top: none;
+    padding: 14px 16px 20px;
     border-radius: 0 0 var(--radius) var(--radius);
+    border-top: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .service-float-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 }
 
@@ -1992,6 +2103,15 @@ h2 {
   min-height: 120px;
 }
 
+@media (max-width: 768px) {
+  .field input, .field select, .field textarea {
+    font-size: 16px; /* Prevents forced iOS Safari zoom */
+  }
+  .form-card {
+    padding: 24px 18px;
+  }
+}
+
 .form-note {
   font-size: 12px;
   color: var(--ink-soft);
@@ -2077,6 +2197,17 @@ h2 {
   border-radius: var(--radius);
   padding: 24px 28px;
   transition: all 0.3s var(--ease);
+}
+
+@media (max-width: 640px) {
+  .job-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px 18px;
+  }
+  .job-card .btn {
+    width: 100%;
+  }
 }
 
 .job-card:hover {
@@ -2289,6 +2420,17 @@ h2 {
   color: var(--orange);
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
 /* ==========================================================================
    BACK TO TOP BUTTON & UTILITIES
    ========================================================================== */
@@ -2310,6 +2452,15 @@ h2 {
   transform: translateY(12px);
   transition: all 0.3s var(--ease);
   border: none;
+}
+
+@media (max-width: 480px) {
+  .to-top {
+    right: 16px;
+    bottom: 16px;
+    width: 42px;
+    height: 42px;
+  }
 }
 
 .to-top.is-shown {
